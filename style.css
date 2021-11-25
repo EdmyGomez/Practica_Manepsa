@@ -111,36 +111,34 @@
 
 
 
-/* Pagina Principal */
+/* Pagina banner Header*/
 
-.Principal{
+.banner{
     display: flex;
     position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
     background-color: #ebebeb;
-    justify-content:space-between;  
+    /* justify-content:space-between;   */
+    z-index: 1;
+
 }
 
-.Principal nav{
+.banner nav{
     display: flex;
     align-items: center;
     width: 100%;
     margin-left: 10%;
-}
-/* .nav-ul-principal{
-    border: 2px black solid; 
-} */
-.right{
-    right: 50px;
-    position: absolute;
+    justify-content: flex-end
 }
 
-.nav-ul-principal li{
+.nav-ul-banner li{
     list-style: none;
     display: inline;
     margin:40px
 }
-.nav-ul-principal li a {
+.nav-ul-banner li a {
     font-size: 17px;
     text-decoration: none;
     
@@ -149,8 +147,34 @@
     
 }
 
-.Principal img{
+.banner img{
     position:relative;  
-    height:100px;  
+    height:70px;  
     margin:10px;
 }
+
+
+/* Pagina Principal Body*/
+.body{
+    margin-top: 100px;
+    
+}
+
+
+
+footer {
+    /* position: ; */
+    /* margin: 20px auto; */
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    /* height: 30px; */
+    
+    /* margin: 1000px 20px 0px 20px; */
+    background: rgba(86, 112, 126, 0.9);
+    margin-top: 20px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    border-radius: 60px 60px 0px 0px;
+  }
