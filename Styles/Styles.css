@@ -1,0 +1,159 @@
+/* Flex-flow Las dos propiedades flex-direction y flex-wrap son usadas a menudo en conjunto con la propiedad abreviada flex-flow, la cual fue creada para combinarlas.*/
+*{
+    margin:0px;
+}
+.Principal{
+    position: relative;
+    background-color: #ebebeb;
+    height: 150px;
+    display: flex;
+    justify-content:space-between;
+    
+    
+}
+
+.Principal div{
+
+}
+.Principal nav{
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    
+    
+}
+.Principal nav ul{
+    align-items: center;
+    
+}
+
+.Principal li{
+    list-style: none;
+    display: inline;
+    
+    
+    
+    
+}
+.Principal ul li a {
+    text-decoration: none;
+    /* color: black; */
+    
+}
+
+.Principal img{
+    position:relative;
+    
+    
+}
+
+.loginForm-view{
+    background-image:  linear-gradient(to left, rgb(216, 59, 59) , rgb(88, 88, 182));
+    /* margin-top: 150px; */
+    /* align-items:center;
+    justify-content:center;  
+    content: center;
+    text-align: center;
+     */
+
+}
+.loginForm-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:20em;
+    
+}
+
+.loginForm-title{
+    text-align: center;
+    padding: 10px;
+}
+
+.loginForm-flogin{
+text-align: center;
+display: table-caption;
+/* margin-left: 150px; */
+}
+
+
+.loginForm-flogin button{
+    border-radius:15px;
+    background-color:rgb(93, 86, 233);
+    color: white;
+}
+
+.loginForm-view-back{
+    float:left;
+    top: 20px;
+}
+
+/* .loginForm >.loginForm-flogin{
+    display: flex;
+    align-content: center;
+    align-items: center;
+} */
+
+
+.form-control{
+    padding: none;
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+
+.principal{
+    /* background-image: linear-gradient(to bottom right, red , blue); */
+    background-color: rgba(0,0,0,0.3);
+    
+}
+.titulo{
+    text-align: center;
+    text-transform: uppercase;
+    text-anchor: middle;
+    color:red;
+}
+
+.muestra{
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap; 
+    
+}
+.muestra img{
+    width: 500px;
+    /* height: 350px; */
+    border-radius:10px;
+    margin: 10px;
+
+
+}
+.logout {
+    
+    text-align: end;
+    
+    
+}
+
+.mensaje1 {
+    margin-bottom:20px;
+    
+    text-anchor: middle;
+    text-align: center;
+    text-transform:uppercase;
+
+}
+
+table, th, tr, td{
+        text-align: center;
+        border: 2px solid rgb(204,152,253);
+}
+
+

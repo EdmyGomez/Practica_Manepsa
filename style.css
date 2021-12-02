@@ -169,6 +169,8 @@
     width: 100%;
     padding: 40px;
     margin-top: 100px;
+    
+
   }
   
   ul, li {
@@ -180,38 +182,52 @@
   ul.slider{
     position: relative;
     width: 100%;
-    height: 350px;
+    min-height: 200px;
+    height: 450px;
+    /* animation: mymove 5s infinite; */
+
   }
   
   ul.slider li {
     /* border: solid black 2px; */
       position: absolute;
-      /* left: 0px; */
+      left: 0px;
       top: 0px;
       opacity: 0;
       width: 100%;
       height: 100%;
-      transition: 0.2s forwards;
-      /* transition: opacity .5s; */
-      background:#fff;
+      /* transition: 3s ; */
+      transition: 2s opacity forwards ;
+       animation: mymove 4s infinite;
+       background:#fff;
+      
   }
+  @keyframes mymove {
+    from {
+        right: 0;
+    }
+    to{
+      right:100%}
+  }
+
+  ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+    /* transition: 2s; */
+}
+
+ ul.slider li:target{
+     opacity: 1;  
+    /*Mostramos el <li> del enlace que pulsemos*/
+} 
   
   ul.slider li img{
     width: 100%;
     height: 100%;
-    transition: all 1s ease-in-out;
+   
+
     /* object-fit: cover; */
   }
   
-  ul.slider li:first-child {
-      opacity: 1; /*Mostramos el primer <li>*/
-      /* transition: 2s; */
-  }
-  
-   ul.slider li:target{
-       opacity: 1;  
-      /*Mostramos el <li> del enlace que pulsemos*/
-  } 
   
   .menu{
     text-align: center;
@@ -254,4 +270,14 @@ footer {
     line-height: 50px;
     color: white;
     border-radius: 60px 60px 0px 0px;
+  }
+
+
+
+  /* Clases Comunes */
+  .text_center{
+    text-align: center;
+  }
+  .margin_10px{
+      margin:10px;
   }
